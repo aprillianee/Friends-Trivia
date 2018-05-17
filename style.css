@@ -1,0 +1,69 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  text-align: center;
+  background-image: url("images/friendsphoto.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#wrapper {
+  width: 800px;
+  height: 92%;
+  box-sizing: border-box;
+  margin: 4% auto;
+  background-color: #dededeb6;
+}
+#sub-wrapper {
+  position: relative;
+  top: 7%;
+}
+img {
+  height: 200px;
+}
+p {
+  font-size: 30px;
+}
+h1 {
+  padding-top: 2.5%;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 6.5em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.769);
+}
+.main-button {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 48px;
+  margin-top: 100px;
+  max-width: 610px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.timer-p {
+  margin-top: 40px;
+}
+.answer:hover {
+  background: rgba(255, 240, 192, 0.708);
+}
+.answer {
+  padding-top: 7px;
+  height: 45px;
+  color: black;
+  padding-left: 14px;
+  border-radius: 4px;
+}
+.img-wrong {
+  margin-top: 40px;
+}
+.first-answer {
+  margin-top: 40px;
+}
+.reset-button {
+  margin-top: 40px;
+}
+.summary-correct {
+  margin-top: 40px;
+}
