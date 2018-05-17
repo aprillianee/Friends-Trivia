@@ -2,7 +2,7 @@ var beginQuiz, gameHTML, questionArr, ansArr, imgArr, correctAnswers, selectedAn
 
 questionArr = ["What is the name of Joey's Cabbage Patch Kid?", "Who's fiance wanted the heavy metal band 'Carcass' at their wedding?", "What did Monica originally want to call her children?", "What car did Phoebe briefly live in?", "What does Mona bring Ross back from a trip?", "What was the special power of the super hero Ross created?", "What was Emma's first word?"];
 ansArr = [["Alicia Danica", "Alicia May Emory", "Adeline Emory", "Alaina May Presley"], ["Janice", "Monica", "Megan", "Ursula"], ["Emma and Daniel", "Erica and Jack", "Erica and Daniel", "Jack and Emma"], ["Pick Up Truck", "New York Cab", "Buick Lesabre", "Buick Wagon"], ["Rock Candy", "Gummy Bears", "Strawberry Taffy", "Salt Water Taffy"], ["Ability to morph into a dinosaur", "Superhuman thirst for knowledge", "Ability to fly", "Geology master"], ["Mommy", "Hi", "Daddy", "Gleba"]];
-imgArr = ["<img class='center-block img-center' src='images/aliciamay.jpg'>", "<img class='center-block img-center' src='images/megan.jpg'>", "<img class='center-block img-center' src='images/emma.jpg'>", "<img class='center-block img-center' src='images/phoebe.jpg'>", "<img class='center-block img-center' src='images/taffy.jpg'>", "<img class='center-block img-center' src='images/scienceboy.jpg'>", "<img class='center-block img-center' src='images/gleba.jpg'>"];
+imgArr = ["<img class='center-block img-center' src='aliciamay.jpg'>", "<img class='center-block img-center' src='megan.jpg'>", "<img class='center-block img-center' src='emma.jpg'>", "<img class='center-block img-center' src='phoebe.jpg'>", "<img class='center-block img-center' src='taffy.jpg'>", "<img class='center-block img-center' src='scienceboy.jpg'>", "<img class='center-block img-center' src='gleba.jpg'>"];
 correctAnswers = ["B. Alicia May Emory", "C. Megan", "A. Emma and Daniel", "C. Buick Lesabre", "D. Salt Water Taffy", "B. Superhuman thirst for knowledge", "D. Gleba"];
 counter = 10;
 questionCounter = 0;
@@ -56,14 +56,14 @@ $(document).ready(function() {
 
     function loss() {
         incorrectTally++;
-        gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>Wrong! The correct answer is: "+ correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-wrong' src='images/oops.jpg'>";
+        gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>Wrong! The correct answer is: "+ correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-wrong' src='oops.jpg'>";
         $("#quiz").html(gameHTML);
         setTimeout(wait, 4000);
     }
 
     function timesUp() {
         unansweredTally++;
-        gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>You ran out of time!  The correct answer was: " + correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-wrong' src='images/oops.jpg'> alt ='Time's up!'";
+        gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>You ran out of time!  The correct answer was: " + correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-wrong' src='oops.jpg'> alt ='Time's up!'";
         $(".quiz").html(gameHTML);
         setTimeout(wait, 4000);
     }
