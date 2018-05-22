@@ -5,4 +5,4 @@ This trivia game shows only one question until the player answers it or their ti
 ### Click on the link to play! 
 https://sleepy-dawn-75118.herokuapp.com/
 
-![Alt text](images/screenshot.jpg 'friends')
+![Alt text](screenshot.jpg 'friends')
